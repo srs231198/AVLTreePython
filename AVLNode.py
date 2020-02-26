@@ -2,7 +2,7 @@ import Book
 
 
 class AVLNode(object):
-    def __init__(self, key, val, height):
+    def __init__(self, key, height, val=Book()):
         # Initialize the node with the string key, book object val 
         # and the int height
         self.key = key

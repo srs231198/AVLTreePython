@@ -1,19 +1,18 @@
 import AVLNode
-import Book
 
 
 class AVLTree(object):
 
-    def getHeight(self, node):
+    def getHeight(self, node=AVLNode()):
         if node is None:
             return -1
 
         return node.height
     
-    def getBalance(self, node):
+    def getBalance(self, node=AVLNode()):
         if node is None:
             return -1
-        
+
         return self.getHeight(node.left_ptr) - self.getHeight(node.right_ptr)
     
     def InOrder(self, root):
