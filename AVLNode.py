@@ -1,7 +1,7 @@
 import Book
 
 
-class AVLNode:
+class AVLNode(object):
     def __init__(self, key, val, height):
         # Initialize the node with the string key, book object val 
         # and the int height
@@ -17,3 +17,4 @@ class AVLNode:
 
     def set_right_ptr(self, node):
         self.right_ptr = node
+    

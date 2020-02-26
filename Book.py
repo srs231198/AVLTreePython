@@ -1,4 +1,4 @@
-class Book:
+class Book(object):
     def __init__(self, ISBN, title, last_name):
         self.ISBN = ISBN
         self.title = title
